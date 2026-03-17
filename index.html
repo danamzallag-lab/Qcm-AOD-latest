@@ -465,15 +465,15 @@
                 <div class="options" id="case1Options">
                     <label class="option">
                         <input type="radio" name="case1" value="a">
-                        <span>A. "Prenez deux comprimés ce soir pour compenser."</span>
+                        <span>A. "Prenez deux comprimés ce soir pour rattraper la dose du matin et celle du soir en une seule prise."</span>
                     </label>
                     <label class="option">
                         <input type="radio" name="case1" value="b">
-                        <span>B. "Il est trop tard (plus de 6h pour un AOD biquotidien). Sautez cette dose et reprenez normalement ce soir à 20h. Ne doublez jamais une dose."</span>
+                        <span>B. "Prenez la dose maintenant même s'il est 16h, car il ne faut jamais sauter une prise d'anticoagulant."</span>
                     </label>
                     <label class="option">
                         <input type="radio" name="case1" value="c">
-                        <span>C. "Vous pouvez prendre la dose maintenant, l'important est de ne jamais doubler."</span>
+                        <span>C. "Il est trop tard car le délai de 6h est dépassé pour un AOD biquotidien. Sautez cette dose et reprenez ce soir à l'heure habituelle. Ne doublez jamais la dose."</span>
                     </label>
                 </div>
                 <div class="feedback" id="case1Feedback"></div>
@@ -489,15 +489,15 @@
                 <div class="options" id="case2Options">
                     <label class="option">
                         <input type="radio" name="case2" value="a">
-                        <span>A. "Arrêtez 7 jours avant l'intervention."</span>
+                        <span>A. "Pour une extraction dentaire simple, un arrêt de 24h avant suffit généralement. Contactons votre médecin pour confirmer cette conduite à tenir."</span>
                     </label>
                     <label class="option">
                         <input type="radio" name="case2" value="b">
-                        <span>B. "Pour un acte à faible risque hémorragique comme une extraction dentaire simple, un arrêt de 24h avant l'acte est généralement recommandé. Contactons votre médecin pour valider cette conduite."</span>
+                        <span>B. "Ne surtout pas arrêter votre anticoagulant, le risque thrombotique est trop important même pour un acte dentaire."</span>
                     </label>
                     <label class="option">
                         <input type="radio" name="case2" value="c">
-                        <span>C. "Ne pas arrêter du tout, c'est trop dangereux."</span>
+                        <span>C. "Arrêtez le Pradaxa® 7 jours avant l'intervention pour être sûr que l'effet anticoagulant soit complètement éliminé."</span>
                     </label>
                 </div>
                 <div class="feedback" id="case2Feedback"></div>
@@ -513,15 +513,15 @@
                 <div class="options" id="case3Options">
                     <label class="option">
                         <input type="radio" name="case3" value="a">
-                        <span>A. "Délivrer normalement, c'est une prescription médicale."</span>
+                        <span>A. "C'est une prescription médicale d'un spécialiste, je délivre normalement en vous conseillant de prendre l'ibuprofène pendant les repas."</span>
                     </label>
                     <label class="option">
                         <input type="radio" name="case3" value="b">
-                        <span>B. "Attention ! AINS + AOD = risque hémorragique majeur. Je contacte le rhumatologue pour proposer une alternative (paracétamol si adapté). Cette association nécessite une évaluation bénéfice/risque stricte."</span>
+                        <span>B. "Réduisez votre dose de Xarelto® de moitié pendant la durée du traitement par ibuprofène pour limiter le risque de saignement."</span>
                     </label>
                     <label class="option">
                         <input type="radio" name="case3" value="c">
-                        <span>C. "Prenez l'ibuprofène mais réduisez la dose de Xarelto®."</span>
+                        <span>C. "AINS et AOD ensemble augmentent fortement le risque hémorragique. Je contacte le rhumatologue pour évaluer une alternative comme le paracétamol."</span>
                     </label>
                 </div>
                 <div class="feedback" id="case3Feedback"></div>
@@ -570,12 +570,12 @@
                 type: "QCU",
                 question: "Quel AOD nécessite une prise BIQUOTIDIENNE (2 fois par jour) ?",
                 options: [
-                    "Rivaroxaban uniquement",
                     "Apixaban et dabigatran",
-                    "Edoxaban uniquement",
+                    "Rivaroxaban et apixaban",
+                    "Rivaroxaban uniquement",
                     "Tous les AOD sont monoprise"
                 ],
-                correct: [1],
+                correct: [0],
                 explanation: "Apixaban (Eliquis®) et dabigatran (Pradaxa®) se prennent en 2 prises par jour. Rivaroxaban et edoxaban sont en 1 prise par jour."
             },
             {
@@ -583,12 +583,12 @@
                 type: "QCU",
                 question: "Quel est l'avantage PRINCIPAL des AOD par rapport aux AVK ?",
                 options: [
-                    "Moins chers",
-                    "Pas de surveillance biologique régulière (INR)",
+                    "Moins d'interactions alimentaires que les AVK",
+                    "Moins chers que les AVK au long cours",
                     "Aucun risque hémorragique",
-                    "Compatible avec tous les aliments"
+                    "Pas de surveillance biologique régulière de type INR"
                 ],
-                correct: [1],
+                correct: [3],
                 explanation: "L'avantage majeur des AOD est l'ABSENCE de surveillance biologique régulière (pas d'INR contrairement aux AVK). Mais ils gardent un risque hémorragique et des interactions médicamenteuses/alimentaires restent possibles."
             },
             {
@@ -609,12 +609,12 @@
                 type: "QCU",
                 question: "Un patient sous apixaban (Eliquis®) biquotidien oublie sa dose du matin (prise à 8h). Il s'en rend compte à 13h (5h après). Que lui conseillez-vous ?",
                 options: [
+                    "Doubler la dose du soir pour compenser",
+                    "Arrêter le traitement jusqu'au lendemain",
                     "Prendre la dose oubliée immédiatement puis reprendre le rythme normal",
-                    "Ignorer la dose oubliée et attendre la prochaine prise",
-                    "Doubler la dose du soir",
-                    "Arrêter le traitement jusqu'au lendemain"
+                    "Ignorer la dose oubliée et attendre la prochaine prise"
                 ],
-                correct: [0],
+                correct: [2],
                 explanation: "Pour un AOD BIQUOTIDIEN (Eliquis®, Pradaxa®) : si l'oubli est découvert dans les 6 HEURES après l'heure prévue → prendre la dose immédiatement puis reprendre le rythme normal. Si > 6h → sauter la dose. Pour un AOD MONOPRISE (Xarelto®), le délai est de 12h. NE JAMAIS doubler une dose."
             },
             {
@@ -635,12 +635,12 @@
                 type: "QCU",
                 question: "Pour un acte chirurgical à FAIBLE risque hémorragique (extraction dentaire simple), quel est le délai d'arrêt recommandé pour un AOD ?",
                 options: [
+                    "Arrêt 3-5 jours avant l'acte",
                     "Pas d'arrêt nécessaire",
                     "Arrêt 24h avant l'acte",
-                    "Arrêt 3-5 jours avant l'acte",
                     "Arrêt 7 jours avant l'acte"
                 ],
-                correct: [1],
+                correct: [2],
                 explanation: "Pour un acte à FAIBLE risque hémorragique (extraction dentaire simple, endoscopie diagnostique), un arrêt de 24h avant l'acte est recommandé. Reprise 6-8h après l'acte si hémostase correcte."
             },
             {
@@ -648,12 +648,12 @@
                 type: "QCU",
                 question: "Pour un acte chirurgical à HAUT risque hémorragique, quel est le délai d'arrêt recommandé pour un AOD ?",
                 options: [
-                    "24h avant",
                     "48h avant",
-                    "3-5 jours avant (au moins 2 demi-vies)",
-                    "7 jours avant"
+                    "3-5 jours avant",
+                    "24h avant",
+                    "7-10 jours avant"
                 ],
-                correct: [2],
+                correct: [1],
                 explanation: "Pour un acte à HAUT risque hémorragique, arrêt 3-5 jours avant (au moins 2 demi-vies du médicament). Adapter selon la fonction rénale. Pas de relais HBPM systématique contrairement aux AVK."
             },
             {
@@ -674,13 +674,13 @@
                 type: "QCU",
                 question: "Un patient sous dabigatran (Pradaxa®) présente un saignement majeur. Quel est l'antidote spécifique ?",
                 options: [
+                    "Andexanet alfa (Ondexxya®)",
                     "Vitamine K",
-                    "Idarucizumab (Praxbind®)",
-                    "Andexanet alfa",
-                    "Aucun antidote disponible"
+                    "Sulfate de protamine",
+                    "Idarucizumab (Praxbind®)"
                 ],
-                correct: [1],
-                explanation: "Antidote du dabigatran : idarucizumab (Praxbind®). Pour les anti-Xa (apixaban, rivaroxaban, edoxaban) : andexanet alfa (disponible mais usage hospitalier). La vitamine K est l'antidote des AVK."
+                correct: [3],
+                explanation: "Antidote du dabigatran : idarucizumab (Praxbind®). Pour les anti-Xa (apixaban, rivaroxaban, edoxaban) : andexanet alfa (disponible mais usage hospitalier). La vitamine K est l'antidote des AVK. Le sulfate de protamine est l'antidote des héparines."
             },
             {
                 id: 11,
@@ -700,12 +700,12 @@
                 type: "QCU",
                 question: "Un patient sous AOD doit-il porter une carte d'anticoagulant ?",
                 options: [
-                    "Non, ce n'est pas nécessaire",
-                    "Oui, obligatoire comme pour les AVK",
-                    "Seulement en cas de chirurgie",
-                    "Uniquement pour les patients âgés"
+                    "Seulement en cas de chirurgie prévue",
+                    "Non, uniquement nécessaire pour les AVK",
+                    "Oui, elle doit être portée en permanence comme pour les AVK",
+                    "Uniquement pour les patients à haut risque hémorragique"
                 ],
-                correct: [1],
+                correct: [2],
                 explanation: "OUI, la carte d'anticoagulant est OBLIGATOIRE pour tout patient sous AOD, comme pour les AVK. Elle doit être portée en permanence et présentée à tout professionnel de santé (urgences, dentiste, etc.)."
             },
             {
@@ -739,12 +739,12 @@
                 type: "QCU",
                 question: "Un patient sous AOD revient avec une ordonnance d'AINS. Quelle est votre conduite ?",
                 options: [
-                    "Délivrer normalement",
-                    "Refuser catégoriquement la délivrance",
-                    "Alerter sur le risque hémorragique majeur, contacter le prescripteur pour évaluation bénéfice/risque et proposition d'alternative (paracétamol)",
-                    "Délivrer mais conseiller de réduire la dose d'AOD"
+                    "Délivrer en conseillant de séparer les prises de 4 heures minimum",
+                    "Délivrer normalement puisque c'est une prescription médicale validée",
+                    "Refuser catégoriquement la délivrance et orienter vers les urgences",
+                    "Alerter le patient, contacter le prescripteur pour évaluer le bénéfice/risque et proposer une alternative"
                 ],
-                correct: [2],
+                correct: [3],
                 explanation: "AOD + AINS = risque hémorragique MAJEUR. Le pharmacien doit ALERTER le patient, contacter le prescripteur pour évaluation du rapport bénéfice/risque et proposer une alternative (paracétamol si adapté). Cette association nécessite une justification clinique très forte."
             }
         ];
@@ -931,23 +931,23 @@
             }
 
             const correctAnswers = {
-                1: 'b',
-                2: 'b',
-                3: 'b'
+                1: 'c',
+                2: 'a',
+                3: 'c'
             };
 
             const feedbacks = {
                 1: {
-                    correct: '✅ Excellente réponse ! Vous appliquez la règle de gestion des oublis AOD : pour un AOD BIQUOTIDIEN (Eliquis®, Pradaxa®), le délai est de 6 HEURES. Si > 6h après l\'heure prévue → sauter la dose et reprendre normalement à la prochaine prise. Pour un AOD MONOPRISE (Xarelto®), le délai est de 12h. Vous rappelez aussi la règle d\'or : ne JAMAIS doubler une dose. C\'est un conseil pharmaceutique sécuritaire et précis.',
+                    correct: '✅ Excellente réponse ! Vous appliquez correctement la règle de gestion des oublis AOD : pour un AOD BIQUOTIDIEN (Eliquis®, Pradaxa®), le délai est de 6 HEURES. Ici, 8h se sont écoulées (> 6h) → il faut sauter la dose et reprendre normalement à la prochaine prise. Pour un AOD MONOPRISE (Xarelto®), le délai serait de 12h. Vous rappelez aussi la règle d\'or : ne JAMAIS doubler une dose.',
                     incorrect: '❌ Attention, votre conseil n\'applique pas la bonne règle. Gestion des oublis AOD : • AOD BIQUOTIDIEN (Eliquis®, Pradaxa®) = délai de 6H : si < 6h après l\'heure prévue → prendre immédiatement ; si > 6h → sauter la dose. • AOD MONOPRISE (Xarelto®) = délai de 12H : si < 12h → prendre immédiatement ; si > 12h → sauter la dose. Ici, 8h après pour un biquotidien = TROP TARD (> 6h) → sauter et reprendre ce soir. NE JAMAIS doubler une dose (risque hémorragique).'
                 },
                 2: {
                     correct: '✅ Parfait ! Vous connaissez les recommandations de gestion péri-opératoire des AOD : pour un acte à faible risque hémorragique (extraction dentaire simple), arrêt 24h avant suffit. Vous adoptez aussi la bonne posture : TOUJOURS valider avec le médecin. C\'est une démarche professionnelle et sécurisante.',
-                    incorrect: '❌ Votre recommandation n\'est pas adaptée. Pour un acte à FAIBLE risque hémorragique (extraction dentaire simple), un arrêt de 24h avant l\'acte est généralement suffisant (puis reprise 6-8h après si hémostase OK). Un arrêt de 7 jours est excessif pour un acte mineur. Ne pas arrêter du tout expose à un risque hémorragique peropératoire. TOUJOURS coordonner avec le médecin.'
+                    incorrect: '❌ Votre recommandation n\'est pas adaptée. Pour un acte à FAIBLE risque hémorragique (extraction dentaire simple), un arrêt de 24h avant l\'acte est généralement suffisant (puis reprise 6-8h après si hémostase OK). Un arrêt de 7 jours est excessif pour un acte mineur. Ne pas arrêter du tout expose à un risque hémorragique peropératoire. Modifier la dose soi-même est dangereux. TOUJOURS coordonner avec le médecin.'
                 },
                 3: {
                     correct: '✅ Excellente vigilance pharmaceutique ! Vous identifiez l\'interaction MAJEURE AOD + AINS (risque hémorragique très élevé). Vous contactez le prescripteur, proposez une alternative (paracétamol) et rappelez que cette association nécessite une justification clinique forte. C\'est un acte de sécurisation essentiel du circuit du médicament.',
-                    incorrect: '❌ ATTENTION DANGER ! AOD + AINS = risque hémorragique MAJEUR (digestif, cérébral). Cette association est une alerte pharmaceutique de niveau 1. Le pharmacien DOIT contacter le prescripteur pour : 1) Évaluer le rapport bénéfice/risque, 2) Proposer une alternative (paracétamol si adapté), 3) Si l\'association est maintenue : surveillance renforcée + durée la plus courte possible. Ne JAMAIS délivrer sans intervention. Modifier la dose d\'AOD n\'est pas la solution.'
+                    incorrect: '❌ ATTENTION DANGER ! AOD + AINS = risque hémorragique MAJEUR (digestif, cérébral). Cette association est une alerte pharmaceutique de niveau 1. Le pharmacien DOIT contacter le prescripteur pour : 1) Évaluer le rapport bénéfice/risque, 2) Proposer une alternative (paracétamol si adapté), 3) Si l\'association est maintenue : surveillance renforcée + durée la plus courte possible. Ne JAMAIS délivrer sans intervention. Modifier la dose d\'AOD soi-même n\'est pas la solution.'
                 }
             };
 
