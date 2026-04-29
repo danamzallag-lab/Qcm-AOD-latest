@@ -435,8 +435,8 @@
                 <div class="progress-fill" id="progressFill"></div>
             </div>
             <div class="progress-text">
-                <span id="progressText">Question 1/15</span>
-                <span id="scoreText">Score: 0/15</span>
+                <span id="progressText">Question 1/27</span>
+                <span id="scoreText">Score: 0/27</span>
             </div>
         </div>
 
@@ -489,15 +489,15 @@
                 <div class="options" id="case2Options">
                     <label class="option">
                         <input type="radio" name="case2" value="a">
-                        <span>A. "Pour une extraction dentaire simple, un arrêt de 24h avant suffit généralement. Contactons votre médecin pour confirmer cette conduite à tenir."</span>
+                        <span>A. "Pour une extraction dentaire simple, arrêtez votre Pradaxa® 24h avant le geste puis reprenez 6h à 8h après si l'hémostase est correcte."</span>
                     </label>
                     <label class="option">
                         <input type="radio" name="case2" value="b">
-                        <span>B. "Ne surtout pas arrêter votre anticoagulant, le risque thrombotique est trop important même pour un acte dentaire."</span>
+                        <span>B. "Pour une extraction dentaire simple, pas d'arrêt nécessaire selon SFCO/GIHP : geste réalisé à distance de la dernière prise, hémostase locale (compression, acide tranexamique). Je contacte le dentiste et votre médecin pour valider."</span>
                     </label>
                     <label class="option">
                         <input type="radio" name="case2" value="c">
-                        <span>C. "Arrêtez le Pradaxa® 7 jours avant l'intervention pour être sûr que l'effet anticoagulant soit complètement éliminé."</span>
+                        <span>C. "Arrêtez le Pradaxa® 7 jours avant l'intervention pour être sûr que l'effet anticoagulant soit complètement éliminé chez vous."</span>
                     </label>
                 </div>
                 <div class="feedback" id="case2Feedback"></div>
@@ -563,7 +563,7 @@
                     "Dabigatran (Pradaxa®)"
                 ],
                 correct: [0, 1, 3],
-                explanation: "Les 3 AOD commercialisés en France sont : apixaban (Eliquis®), rivaroxaban (Xarelto®) et dabigatran (Pradaxa®). La warfarine est un AVK (Anti-Vitamine K), pas un AOD. Edoxaban (Lixiana®) n'est pas commercialisé en France."
+                explanation: "Les 4 AOD commercialisés en France sont : apixaban (Eliquis®), rivaroxaban (Xarelto®), dabigatran (Pradaxa®) et edoxaban (Lixiana®). La warfarine est un AVK (Anti-Vitamine K), pas un AOD. Edoxaban (AMM européenne 2015) est exploité en France par Daiichi Sankyo et remboursé en FANV et MTEV. Source : ANSM base-donnees-publique.medicaments.gouv.fr ; HAS Commission de la Transparence Lixiana."
             },
             {
                 id: 2,
@@ -633,15 +633,15 @@
             {
                 id: 7,
                 type: "QCU",
-                question: "Pour un acte chirurgical à FAIBLE risque hémorragique (extraction dentaire simple), quel est le délai d'arrêt recommandé pour un AOD ?",
+                question: "Pour une extraction dentaire simple (1 à 3 dents) chez un patient sous AOD à fonction rénale normale, quelle est la conduite recommandée ?",
                 options: [
-                    "Arrêt 3-5 jours avant l'acte",
-                    "Pas d'arrêt nécessaire",
-                    "Arrêt 24h avant l'acte",
-                    "Arrêt 7 jours avant l'acte"
+                    "Arrêt systématique 3 à 5 jours avant l'acte avec relais HBPM préventif jusqu'au geste opératoire",
+                    "Pas d'arrêt nécessaire : geste réalisé à distance de la dernière prise + hémostase locale (acide tranexamique)",
+                    "Arrêt obligatoire 24 heures avant l'acte avec reprise systématique 6 à 8 heures après le geste",
+                    "Switch immédiat vers un AVK le temps de l'acte avec INR cible 2-3 le matin de l'extraction"
                 ],
-                correct: [2],
-                explanation: "Pour un acte à FAIBLE risque hémorragique (extraction dentaire simple, endoscopie diagnostique), un arrêt de 24h avant l'acte est recommandé. Reprise 6-8h après l'acte si hémostase correcte."
+                correct: [1],
+                explanation: "SFCO 2015 + GIHP/SFAR : pour une extraction dentaire simple (1-3 dents) ou tout acte à faible risque hémorragique, PAS d'arrêt de l'AOD. Le geste est réalisé à distance de la dernière prise (idéalement juste avant la prise suivante) + hémostase locale rigoureuse : compression, sutures, gaze imbibée d'acide tranexamique, bain de bouche. L'arrêt 24h s'applique aux actes faibles non dentaires (endoscopie diagnostique). Source : SFCO 2015 — Recommandations gestion péri-opératoire patients sous antithrombotiques en chirurgie orale ; GIHP/SFAR 2015."
             },
             {
                 id: 8,
@@ -661,10 +661,10 @@
                 type: "QCM",
                 question: "Quels sont les signes d'alerte hémorragique à surveiller sous AOD ? (Plusieurs réponses possibles)",
                 options: [
-                    "Saignements de nez répétés ou prolongés",
-                    "Urines rouges ou foncées (hématurie)",
-                    "Selles noires ou sang dans les selles",
-                    "Constipation légère"
+                    "Saignements de nez répétés ou prolongés (épistaxis durant plus de 10 minutes)",
+                    "Urines rouges ou foncées (hématurie macroscopique visible à l'œil nu)",
+                    "Selles noires goudronneuses ou présence visible de sang rouge dans les selles",
+                    "Légères ecchymoses superficielles uniquement après un choc direct documenté"
                 ],
                 correct: [0, 1, 2],
                 explanation: "Signes d'alerte hémorragique : épistaxis répétés/prolongés, hématurie (sang dans urines), rectorragies (sang dans selles), hématomes spontanés, céphalées violentes. La constipation légère n'est pas un signe hémorragique."
@@ -687,10 +687,10 @@
                 type: "QCM",
                 question: "Quels conseils devez-vous transmettre systématiquement à un patient sous AOD ? (Plusieurs réponses possibles)",
                 options: [
-                    "Prendre le traitement à heure régulière",
-                    "Signaler tout saignement anormal",
-                    "Éviter l'automédication (surtout AINS)",
-                    "Manger beaucoup de choux et épinards"
+                    "Prendre le traitement à heure régulière chaque jour, idéalement aux mêmes horaires",
+                    "Signaler tout saignement anormal (épistaxis, hématurie, méléna, hématome spontané)",
+                    "Éviter l'automédication, en particulier les AINS (ibuprofène, kétoprofène, aspirine forte dose)",
+                    "Adapter strictement son apport alimentaire en vitamine K (limiter choux, épinards, brocolis)"
                 ],
                 correct: [0, 1, 2],
                 explanation: "Messages clés : prise à heure régulière, signaler tout saignement, éviter l'automédication (AINS ++), informer tous les professionnels de santé. Contrairement aux AVK, pas de restriction alimentaire stricte avec les AOD."
@@ -698,15 +698,15 @@
             {
                 id: 12,
                 type: "QCU",
-                question: "Un patient sous AOD doit-il porter une carte d'anticoagulant ?",
+                question: "Concernant la carte de surveillance « Patient sous anticoagulant » chez un patient sous AOD, quelle affirmation est exacte ?",
                 options: [
-                    "Seulement en cas de chirurgie prévue",
-                    "Non, uniquement nécessaire pour les AVK",
-                    "Oui, elle doit être portée en permanence comme pour les AVK",
-                    "Uniquement pour les patients à haut risque hémorragique"
+                    "Carte fortement recommandée et fournie systématiquement dans chaque conditionnement d'AOD par le laboratoire",
+                    "Carte rendue légalement obligatoire par la loi française depuis l'arrêté de 2018 relatif aux anticoagulants",
+                    "Carte optionnelle à demander uniquement par le patient en cas de chirurgie programmée à venir prochainement",
+                    "Carte réservée aux patients identifiés à haut risque hémorragique avéré (> 65 ans avec antécédent de saignement)"
                 ],
-                correct: [2],
-                explanation: "OUI, la carte d'anticoagulant est OBLIGATOIRE pour tout patient sous AOD, comme pour les AVK. Elle doit être portée en permanence et présentée à tout professionnel de santé (urgences, dentiste, etc.)."
+                correct: [0],
+                explanation: "La carte de surveillance est FORTEMENT RECOMMANDÉE pour tout patient sous AOD (et AVK), mais elle n'est pas légalement obligatoire au sens juridique strict. Elle est INCLUSE systématiquement dans chaque conditionnement par le laboratoire dans le cadre du Plan de Gestion des Risques européen (PGR). Le pharmacien doit la remettre, expliquer son contenu et inciter le patient à la porter en permanence et à la présenter à tout soignant. Source : HAS — Les anticoagulants oraux ; ANSM — RCP AOD section 4.4 ; OMéDIT Normandie."
             },
             {
                 id: 13,
@@ -732,20 +732,200 @@
                     "Diabète de type 2"
                 ],
                 correct: [0, 1, 2],
-                explanation: "Contre-indications absolues : insuffisance rénale sévère (élimination rénale), saignement actif majeur, valves mécaniques (AVK obligatoires), insuffisance hépatique sévère. Le diabète n'est pas une contre-indication."
+                explanation: "Contre-indications/précautions selon RCP : DABIGATRAN (Pradaxa) = vraie CI absolue si ClCr < 30 mL/min (RCP section 4.3, unique parmi les 4 AOD). Apixaban, rivaroxaban, edoxaban = NON RECOMMANDÉS si ClCr < 15 mL/min (formulation plus souple que CI stricte). Saignement actif majeur = CI absolue pour les 4. Valves mécaniques = CI absolue (étude RE-ALIGN, AVK obligatoires). Insuffisance hépatique sévère = CI. Le diabète n'est pas une CI. Source : RCP EMA Pradaxa/Eliquis/Xarelto/Lixiana sections 4.3-4.4."
             },
             {
                 id: 15,
                 type: "QCU",
                 question: "Un patient sous AOD revient avec une ordonnance d'AINS. Quelle est votre conduite ?",
                 options: [
-                    "Délivrer en conseillant de séparer les prises de 4 heures minimum",
-                    "Délivrer normalement puisque c'est une prescription médicale validée",
-                    "Refuser catégoriquement la délivrance et orienter vers les urgences",
-                    "Alerter le patient, contacter le prescripteur pour évaluer le bénéfice/risque et proposer une alternative"
+                    "Délivrer en conseillant au patient de séparer les prises de 4 heures minimum entre l'AOD et l'AINS",
+                    "Délivrer normalement puisqu'il s'agit d'une prescription médicale validée par le médecin traitant prescripteur",
+                    "Refuser catégoriquement la délivrance et orienter immédiatement le patient vers le service des urgences",
+                    "Alerter le patient sur le risque hémorragique, contacter le prescripteur pour évaluer le bénéfice/risque et proposer une alternative"
                 ],
                 correct: [3],
                 explanation: "AOD + AINS = risque hémorragique MAJEUR. Le pharmacien doit ALERTER le patient, contacter le prescripteur pour évaluation du rapport bénéfice/risque et proposer une alternative (paracétamol si adapté). Cette association nécessite une justification clinique très forte."
+            },
+            {
+                id: 16,
+                type: "QCU",
+                niveau: "intermediaire",
+                competence: "mecanisme",
+                question: "Quel est le mécanisme d'action moléculaire du dabigatran (Pradaxa®) ?",
+                options: [
+                    "Inhibiteur direct de la thrombine (anti-IIa direct), bloquant la conversion fibrinogène → fibrine",
+                    "Inhibiteur direct du facteur Xa (anti-Xa direct), bloquant l'activation de la prothrombine",
+                    "Anti-vitamine K (AVK) inhibant la régénération hépatique des facteurs II, VII, IX, X via VKORC1",
+                    "Inhibiteur de la glycoprotéine P (P-gp) bloquant le transport intestinal des facteurs de coagulation"
+                ],
+                correct: [0],
+                explanation: "Le dabigatran est un inhibiteur direct de la thrombine (anti-IIa). C'est le seul anti-IIa parmi les AOD. Apixaban, rivaroxaban et edoxaban sont des anti-Xa directs. Cette différence explique pourquoi l'antidote est spécifique : idarucizumab pour dabigatran (anti-IIa), andexanet alfa pour les anti-Xa. Source : RCP Pradaxa EMA section 5.1 ; cours enrichi slide 5."
+            },
+            {
+                id: 17,
+                type: "QCU",
+                niveau: "expert",
+                competence: "surveillance",
+                question: "Chez un patient en FA non valvulaire, l'apixaban (Eliquis®) doit être prescrit à 2,5 mg × 2/jour si AU MOINS 2 critères sont réunis parmi lesquels :",
+                options: [
+                    "Âge ≥ 75 ans, poids ≤ 70 kg, créatininémie ≥ 100 µmol/L (seuils ESC 2024 simplifiés)",
+                    "Âge ≥ 80 ans, poids ≤ 60 kg, créatininémie ≥ 133 µmol/L (1,5 mg/dL)",
+                    "ClCr < 50 mL/min systématiquement, sans autre critère associé requis",
+                    "Antécédent de saignement digestif majeur dans l'année écoulée précédant la prescription"
+                ],
+                correct: [1],
+                explanation: "RCP Eliquis section 4.2 — FANV : la dose est réduite à 2,5 mg × 2/j si le patient présente au moins 2 critères parmi : âge ≥ 80 ans, poids ≤ 60 kg, créatininémie ≥ 133 µmol/L (1,5 mg/dL). Ou si ClCr 15-29 mL/min seul. Ce décryptage est CRITIQUE au comptoir : une dose 5 mg × 2 chez un patient ≥ 80 ans + < 60 kg = sur-dosage à signaler. Source : RCP Eliquis EMA ; cours enrichi slide 12."
+            },
+            {
+                id: 18,
+                type: "QCU",
+                niveau: "expert",
+                competence: "mecanisme",
+                question: "Pourquoi l'edoxaban (Lixiana®) doit-il être ÉVITÉ en FA non valvulaire chez un patient à fonction rénale très conservée (ClCr > 95 mL/min) ?",
+                options: [
+                    "Risque d'accumulation toxique aux doses standards par défaut d'élimination biliaire associée",
+                    "Allongement excessif du QT documenté à hautes concentrations plasmatiques chez ces patients",
+                    "Efficacité réduite démontrée dans l'étude ENGAGE-AF : sur-clairance → sous-dosage → moins d'efficacité antithrombotique",
+                    "Interaction majeure avec l'urée plasmatique élevée typique des patients à clairance haute"
+                ],
+                correct: [2],
+                explanation: "Particularité unique de l'edoxaban (boxed warning FDA + RCP EMA) : chez les patients en FANV avec ClCr > 95 mL/min, l'efficacité est réduite par rapport à la warfarine (étude ENGAGE-AF-TIMI 48). Mécanisme : sur-clairance rénale → concentrations sub-thérapeutiques → moins d'efficacité antithrombotique. Recommandation : ne pas utiliser en FANV si ClCr > 95. Particularité ABSENTE chez apixaban/rivaroxaban/dabigatran. Source : RCP Lixiana EMA ; ENGAGE-AF-TIMI 48 NEJM 2013 ; cours enrichi slide 20."
+            },
+            {
+                id: 19,
+                type: "QCU",
+                niveau: "intermediaire",
+                competence: "reglementaire",
+                question: "Quelle est la nouveauté principale apportée par les recommandations ESC 2024 sur le score thromboembolique en fibrillation atriale ?",
+                options: [
+                    "Score renommé CHA2DS2-VA : suppression du critère sexe féminin (Sex category), désormais non comptabilisé",
+                    "Ajout de la BPCO comme nouveau facteur de risque thromboembolique majeur du score CHA2DS2-VASc",
+                    "Suppression de la BPCO et de l'obésité comme facteurs de risque pour simplifier le score initial",
+                    "Relèvement du seuil d'anticoagulation indiquée à un score ≥ 4 (au lieu de ≥ 2) chez tous les patients"
+                ],
+                correct: [0],
+                explanation: "ESC Guidelines 2024 (Atrial Fibrillation) : le score est renommé CHA2DS2-VA (au lieu de CHA2DS2-VASc). Le critère « Sex category (female) » est SUPPRIMÉ car il n'apporte pas de valeur prédictive indépendante. L'anticoagulation reste indiquée si score ≥ 2 (voire ≥ 1 selon le terrain). Le score HAS-BLED reste utilisé pour évaluer le risque hémorragique. Source : ESC 2024 Guidelines for the management of atrial fibrillation ; cours enrichi slide 7."
+            },
+            {
+                id: 20,
+                type: "QCU",
+                niveau: "intermediaire",
+                competence: "urgence",
+                question: "Un patient de 65 ans porteur d'une valve cardiaque mécanique mitrale présente une ordonnance d'apixaban (Eliquis®) 5 mg × 2/jour. Quelle est votre conduite immédiate ?",
+                options: [
+                    "Délivrance normale après vérification de la dose adaptée à la fonction rénale du patient",
+                    "Refus de délivrance et appel immédiat du prescripteur : les AOD sont contre-indiqués sur valves mécaniques, AVK obligatoires",
+                    "Délivrance avec dose réduite à 2,5 mg × 2/jour pour limiter le risque hémorragique chez ce patient",
+                    "Délivrance avec ajout d'un IPP en prévention de l'ulcère gastroduodénal favorisé par les AOD"
+                ],
+                correct: [1],
+                explanation: "CONTRE-INDICATION ABSOLUE des AOD chez les patients porteurs de valves cardiaques mécaniques (RCP section 4.3 des 4 AOD). Étude RE-ALIGN (Eikelboom NEJM 2013) : dabigatran vs warfarine sur valves mécaniques → arrêt prématuré pour surrisque thrombotique ET hémorragique. Les AVK (warfarine, fluindione) sont OBLIGATOIRES. Action pharmacien : ne pas délivrer + appel prescripteur urgent + opinion pharmaceutique tracée. Source : RCP EMA des 4 AOD ; ESC 2024 ; cours enrichi slide 6."
+            },
+            {
+                id: 21,
+                type: "QCU",
+                niveau: "junior",
+                competence: "comptoir",
+                question: "Quel conseil de conservation est SPÉCIFIQUE au dabigatran (Pradaxa®) et doit être systématiquement transmis au comptoir ?",
+                options: [
+                    "Conserver les gélules au réfrigérateur entre 2 et 8 °C, dans leur emballage d'origine",
+                    "Conservation impérative dans le blister d'origine, sans déconditionnement en pilulier hebdomadaire (sensibilité à l'humidité)",
+                    "Conservation à l'abri de la lumière uniquement, le pilulier hebdomadaire reste autorisé après 6 mois",
+                    "Conservation au congélateur pendant les 6 premiers mois suivant la première ouverture du flacon"
+                ],
+                correct: [1],
+                explanation: "Particularité du dabigatran (RCP Pradaxa section 6.4) : très sensible à l'humidité — perte d'efficacité si déconditionné. Les gélules doivent IMPÉRATIVEMENT rester dans leur blister d'origine jusqu'à la prise. Pas de pilulier hebdomadaire. Cette spécificité concerne UNIQUEMENT le dabigatran (les 3 autres AOD peuvent être déconditionnés en pilulier). Conseil systématique au comptoir, surtout chez patient âgé ou avec aidant. Source : RCP Pradaxa EMA section 6.4 ; cours enrichi slide 19."
+            },
+            {
+                id: 22,
+                type: "QCU",
+                niveau: "intermediaire",
+                competence: "comptoir",
+                question: "Une patiente de 32 ans sous rivaroxaban (Xarelto®) pour MTEV vous annonce un projet de grossesse. Quelle est votre conduite ?",
+                options: [
+                    "Maintenir le rivaroxaban tout au long de la grossesse, en surveillant simplement la fonction rénale tous les 3 mois",
+                    "Réduire la dose du rivaroxaban de moitié dès l'arrêt de la contraception, jusqu'au début du 3ᵉ trimestre",
+                    "Switch vers un AVK (warfarine) le temps de la grossesse, avec surveillance INR mensuelle pendant 9 mois",
+                    "Contre-indication absolue : programmer un relais HBPM (énoxaparine) avec le médecin avant l'arrêt de la contraception"
+                ],
+                correct: [3],
+                explanation: "AOD = CONTRE-INDIQUÉS pendant la grossesse et l'allaitement (passage transplacentaire et lactique, risque tératogène/hémorragique fœtal). Conduite : programmer le relais vers HBPM (énoxaparine, tinzaparine) AVANT l'arrêt de la contraception, en concertation médecin. AVK aussi CI pendant la grossesse (sauf valves mécaniques au T2-T3 en milieu spécialisé). Le pharmacien oriente impérativement vers le médecin avant tout projet. Source : CRAT (lecrat.fr) — AOD et grossesse ; cours enrichi slide 33."
+            },
+            {
+                id: 23,
+                type: "QCU",
+                niveau: "intermediaire",
+                competence: "interactions",
+                question: "Une patiente sous apixaban (Eliquis®) demande conseil pour une cure de millepertuis (Hypericum perforatum) pour son humeur. Quelle est votre réponse ?",
+                options: [
+                    "Délivrance possible en ponctuel sur 7 jours sans interaction significative documentée à ce jour",
+                    "À éviter : induction enzymatique du CYP3A4 et de la P-gp réduisant l'efficacité de l'AOD avec risque thromboembolique",
+                    "Délivrance possible uniquement le soir au coucher, à distance de la prise d'apixaban d'au moins 8 heures",
+                    "Délivrance possible en réduisant la dose d'apixaban de moitié pendant toute la durée de la cure de phyto"
+                ],
+                correct: [1],
+                explanation: "Le millepertuis est un INDUCTEUR enzymatique majeur du CYP3A4 et de la glycoprotéine P (P-gp) — voies de métabolisation des AOD. Conséquence : diminution des concentrations plasmatiques d'apixaban (et autres AOD) → risque d'inefficacité antithrombotique → AVC, embolie pulmonaire, récidive de TVP. Association DÉCONSEILLÉE (Thésaurus ANSM). Conseil : refuser la délivrance + alerter prescripteur + proposer alternative non-inductrice. Source : ANSM — Thésaurus interactions ; RCP EMA AOD ; cours enrichi slide 32."
+            },
+            {
+                id: 24,
+                type: "QCU",
+                niveau: "expert",
+                competence: "urgence",
+                question: "Un patient sous apixaban (Eliquis®) présente une hémorragie digestive majeure aux urgences. Quel antidote spécifique peut être utilisé en réversion en 2026 en France ?",
+                options: [
+                    "Andexanet alfa (Ondexxya®) : leurre recombinant du facteur Xa, antidote anti-Xa hospitalier français",
+                    "Idarucizumab (Praxbind®) : fragment d'anticorps anti-IIa, antidote du dabigatran exclusivement",
+                    "Vitamine K (Vitamine K1 Roche®) : antidote des AVK, inactive sur les AOD au plan pharmacologique",
+                    "Sulfate de protamine : antidote des héparines (HNF, HBPM), inactif sur les AOD au plan pharmacologique"
+                ],
+                correct: [0],
+                explanation: "Antidote anti-Xa = ANDEXANET ALFA (Ondexxya®), AMM EU 2019, disponible en milieu hospitalier français en 2026. Il neutralise apixaban, rivaroxaban (et hors AMM edoxaban). Idarucizumab (Praxbind®) = anti-IIa, antidote spécifique du DABIGATRAN uniquement. Vitamine K = AVK. Sulfate de protamine = héparines. Distinction critique pour orientation aux urgences. Source : RCP Ondexxya EMA ; ANSM ; cours enrichi slide 23."
+            },
+            {
+                id: 25,
+                type: "QCU",
+                niveau: "intermediaire",
+                competence: "surveillance",
+                question: "Quelle est la fréquence MINIMALE de surveillance de la fonction rénale (ClCr Cockcroft-Gault) recommandée chez un patient stable sous AOD ?",
+                options: [
+                    "Mensuelle systématique chez tout patient sous AOD pour anticiper précocement toute dégradation rénale",
+                    "Tous les 3 mois la première année puis annuelle ensuite si la fonction rénale reste stable",
+                    "Annuelle suffit si patient stable et fonction rénale normale, sans antécédent ni comorbidité particulière",
+                    "Tous les 6 mois minimum (Cockcroft-Gault), plus fréquent si DFG < 60 mL/min ou âge > 75 ans"
+                ],
+                correct: [3],
+                explanation: "HAS / EHRA Practical Guide 2021 : surveillance fonction rénale (Cockcroft-Gault) au minimum tous les 6 mois sous AOD. Plus fréquent (≤ 3 mois) si : ClCr < 60 mL/min, âge > 75 ans, fragilité, comorbidités (insuffisance cardiaque, déshydratation), médicaments néphrotoxiques. Surveillance également : NFS (hémoglobine), ASAT/ALAT (atteinte hépatique). Bonne pratique en entretien officinal : interroger sur le dernier bilan biologique. Source : HAS ; EHRA 2021 ; cours enrichi slides 13 et 33."
+            },
+            {
+                id: 26,
+                type: "QCU",
+                niveau: "expert",
+                competence: "comptoir",
+                question: "En traitement curatif d'une thrombose veineuse profonde (MTEV), quelles molécules nécessitent OBLIGATOIREMENT au moins 5 jours d'HBPM avant le relais oral ?",
+                options: [
+                    "Apixaban et rivaroxaban : initiation directe orale sans HBPM préalable obligatoire pour ces 2 AOD",
+                    "Apixaban et dabigatran : tous deux nécessitent ≥ 5 j d'HBPM puis relais à 150 mg × 2 ou 5 mg × 2",
+                    "Dabigatran et edoxaban : initiation OBLIGATOIRE par HBPM ≥ 5 jours puis relais oral selon RCP",
+                    "Tous les 4 AOD nécessitent un relais HBPM systématique de 5 à 10 jours avant initiation orale en MTEV"
+                ],
+                correct: [2],
+                explanation: "RCP MTEV : DABIGATRAN (Pradaxa) et EDOXABAN (Lixiana) requièrent obligatoirement ≥ 5 jours d'HBPM préalable avant relais oral (RE-COVER, Hokusai-VTE). À l'inverse, APIXABAN (10 mg × 2/j × 7 j puis 5 mg × 2/j) et RIVAROXABAN (15 mg × 2/j × 21 j puis 20 mg/j) permettent une initiation directe orale (AMPLIFY, EINSTEIN). Différence cruciale au comptoir pour ne pas délivrer du dabigatran sans le « bon départ » HBPM. Source : RCP EMA Pradaxa/Lixiana/Eliquis/Xarelto ; cours enrichi slide 11."
+            },
+            {
+                id: 27,
+                type: "QCU",
+                niveau: "junior",
+                competence: "facturation",
+                question: "Concernant l'accompagnement pharmaceutique du patient sous AOD en année 1 (Convention pharmaceutique), quelle structure d'entretiens et de tarifs s'applique ?",
+                options: [
+                    "1 entretien forfaitaire annuel à 30 €, code TAC, payé en une seule fois en fin d'année civile",
+                    "2 entretiens à 30 € chacun, codes ASS, sans bilan annuel ni clôture en fin d'année",
+                    "3 entretiens (1 évaluation initiale + 2 thématiques), codes ASI, tarifs 15 € + 15 € + 20 € = 50 €/an, AMO 70 %",
+                    "5 entretiens trimestriels imposés à 10 € chacun, code TAC répété, AMO 100 % sans ticket modérateur"
+                ],
+                correct: [2],
+                explanation: "Convention pharmaceutique (Avenant accompagnement AOD) : Année 1 = 1 TAC adhésion (0,01 €) + 3 ASI (Acte de Suivi Initial) = 1 entretien d'évaluation initiale + 2 entretiens thématiques. Tarifs : 15 € + 15 € + 20 € = 50 € total an 1, AMO 70 %. Années suivantes : 2 ASS = 10 € + 20 € = 30 €. Modules thématiques au choix : posologie/oubli, interactions, situations à risque, observance. Source : ameli.fr Accompagnement pharmaceutique AOD ; Convention nationale pharmaciens 2022 ; cours enrichi slide 29."
             }
         ];
 
@@ -932,7 +1112,7 @@
 
             const correctAnswers = {
                 1: 'c',
-                2: 'a',
+                2: 'b',
                 3: 'c'
             };
 
@@ -942,8 +1122,8 @@
                     incorrect: '❌ Attention, votre conseil n\'applique pas la bonne règle. Gestion des oublis AOD : • AOD BIQUOTIDIEN (Eliquis®, Pradaxa®) = délai de 6H : si < 6h après l\'heure prévue → prendre immédiatement ; si > 6h → sauter la dose. • AOD MONOPRISE (Xarelto®) = délai de 12H : si < 12h → prendre immédiatement ; si > 12h → sauter la dose. Ici, 8h après pour un biquotidien = TROP TARD (> 6h) → sauter et reprendre ce soir. NE JAMAIS doubler une dose (risque hémorragique).'
                 },
                 2: {
-                    correct: '✅ Parfait ! Vous connaissez les recommandations de gestion péri-opératoire des AOD : pour un acte à faible risque hémorragique (extraction dentaire simple), arrêt 24h avant suffit. Vous adoptez aussi la bonne posture : TOUJOURS valider avec le médecin. C\'est une démarche professionnelle et sécurisante.',
-                    incorrect: '❌ Votre recommandation n\'est pas adaptée. Pour un acte à FAIBLE risque hémorragique (extraction dentaire simple), un arrêt de 24h avant l\'acte est généralement suffisant (puis reprise 6-8h après si hémostase OK). Un arrêt de 7 jours est excessif pour un acte mineur. Ne pas arrêter du tout expose à un risque hémorragique peropératoire. Modifier la dose soi-même est dangereux. TOUJOURS coordonner avec le médecin.'
+                    correct: '✅ Parfait ! Vous appliquez correctement les recommandations SFCO 2015 + GIHP/SFAR : pour une extraction dentaire simple (1-3 dents) chez un patient sous AOD, PAS d\'arrêt du traitement. Le geste est réalisé à distance de la dernière prise (idéalement juste avant la prise suivante) avec hémostase locale rigoureuse : compression, sutures, gaze imbibée d\'acide tranexamique, bain de bouche. Vous coordonnez avec le dentiste et le médecin — démarche pluridisciplinaire optimale.',
+                    incorrect: '❌ Votre recommandation ne suit pas les recommandations actualisées. Pour une extraction dentaire simple (1-3 dents), les recommandations SFCO 2015 et GIHP/SFAR sont claires : PAS D\'ARRÊT du traitement AOD. Le geste est réalisé à distance de la dernière prise + hémostase locale (acide tranexamique, compression). L\'arrêt 24h s\'applique aux actes à risque faible NON dentaires (endoscopie diagnostique). Un arrêt 7 jours est dangereux (risque thrombotique : AVC, embolie). Coordination dentiste/médecin nécessaire pour valider le moment optimal du geste.'
                 },
                 3: {
                     correct: '✅ Excellente vigilance pharmaceutique ! Vous identifiez l\'interaction MAJEURE AOD + AINS (risque hémorragique très élevé). Vous contactez le prescripteur, proposez une alternative (paracétamol) et rappelez que cette association nécessite une justification clinique forte. C\'est un acte de sécurisation essentiel du circuit du médicament.',
